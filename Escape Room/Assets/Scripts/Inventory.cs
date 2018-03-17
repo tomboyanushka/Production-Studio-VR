@@ -2,20 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Inventory : MonoBehaviour
 {
+    public static Inventory Instance { get; set; }
     //Populate early
+    
     public List<Item> database = new List<Item>();
 
     //Gets populated in-game
     public List<Item> currentInventory = new List<Item>();
 
     public Item heldItem;
-    private bool inventoryOpen = false;
+    public bool inventoryOpen = false;
 
     // Use this for initialization
     void Start()
     {
+        if (Instance != null && Instance != this)
+            Destroy(gameObject);
+        else
+            Instance = this;
         heldItem = null;
     }
 
@@ -23,15 +30,21 @@ public class Inventory : MonoBehaviour
     void Update()
     {
         // Inventory button press
-        if (Input.GetKey("I"))
+        if (Input.GetKeyDown("I"))
         {
             //Open or close inventory
             inventoryOpen = !inventoryOpen;
             Debug.Log("Inventory Button pressed");
         }
+
+        //Unequip item from hand
+        if (!inventoryOpen && Input.GetKeyDown("Q"))
+        {
+            heldItem = null;
+        }
     }
 
-    void Additem(int itemID)
+    public void Additem(int itemID)
     {
         
         foreach(Item item in currentInventory)
@@ -53,7 +66,7 @@ public class Inventory : MonoBehaviour
     }
 
     //Remove item from i
-    void RemoveItem()
+    public void RemoveItem()
     {
         if (heldItem != null)
         {
@@ -62,7 +75,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    void EquipItem(int itemID)
+    public void EquipItem(int itemID)
     {
         foreach (Item item in currentInventory)
         {
@@ -72,5 +85,10 @@ public class Inventory : MonoBehaviour
                 return;
             }
         }
+    }
+
+    public void AddToDatabase(Item item)
+    {
+        database.Add(item);
     }
 }
