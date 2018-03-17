@@ -51,35 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FBX Models\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
-     <Compile Include="Assets\FBX Models\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
-     <Compile Include="Assets\FBX Models\ProBuilder\API Examples\Misc\HueCube.cs" />
-     <Compile Include="Assets\FBX Models\ProBuilder\API Examples\Procedural Mesh\ExtrudeRandomEdges.cs" />
-     <Compile Include="Assets\FBX Models\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
-     <Compile Include="Assets\FBX Models\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
-     <Compile Include="Assets\FBX Models\ProBuilder\Resources\Materials\Lights.cs" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_TransparentOverlay.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\API Examples\Icosphere FFT\README.txt" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_SelectionPicker.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\About\changelog.txt" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\DiffuseVertexColor.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_FaceHighlight.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_UnlitSolidColor.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_ReferenceUnlit.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\DiffuseTextureBlend.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_StandardVertexColor.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_VertexPicker.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_HideVertices.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\About\ThirdPartyLicenses.txt" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_UnlitVertexColor.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_FacePicker.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\About\Font\SIL Open Font License.txt" />
-     <None Include="Assets\FBX Models\ProBuilder\About\pc_AboutEntry_ProBuilder.txt" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_VertexShader.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_NormalPreview.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_ScrollHighlight.shader" />
-     <None Include="Assets\FBX Models\ProBuilder\readme.txt" />
-     <None Include="Assets\FBX Models\ProBuilder\Shader\pb_SmoothingPreview.shader" />
+     <Compile Include="Assets\Collectable.cs" />
+     <Compile Include="Assets\Draggable.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
@@ -172,24 +145,6 @@
  </Reference>
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/Naveen/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderEditor-Unity5">
- <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Assets/FBX Models/ProBuilder/Editor/ProBuilderEditor-Unity5.dll</HintPath>
- </Reference>
- <Reference Include="Poly2Tri">
- <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Assets/FBX Models/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
- </Reference>
- <Reference Include="KdTreeLib">
- <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Assets/FBX Models/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
- </Reference>
- <Reference Include="pb_Stl">
- <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Assets/FBX Models/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderCore-Unity5">
- <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Assets/FBX Models/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderMeshOps-Unity5">
- <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Assets/FBX Models/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
