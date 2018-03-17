@@ -33,16 +33,44 @@ public class Inventory : MonoBehaviour
 
     void Additem(int itemID)
     {
+        
+        foreach(Item item in currentInventory)
+        {
+            if (item.itemID == itemID)
+            {
+                return;
+            }
+        }
 
+        foreach(Item item in database)
+        {
+            if (item.itemID == itemID)
+            {
+                currentInventory.Add(item);
+                return;
+            }
+        }
     }
 
-    void RemoveItem(int itemID)
+    //Remove item from i
+    void RemoveItem()
     {
-
+        if (heldItem != null)
+        {
+            currentInventory.Remove(heldItem);
+            heldItem = null;
+        }
     }
 
-    void SelectItem(int itemID)
+    void EquipItem(int itemID)
     {
-
+        foreach (Item item in currentInventory)
+        {
+            if (item.itemID == itemID)
+            {
+                heldItem = item;
+                return;
+            }
+        }
     }
 }
