@@ -202,8 +202,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             m_Camera.transform.localPosition = newCameraPosition;
         }
-
-
         private void GetInput(out float speed)
         {
             // Read input
@@ -235,14 +233,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 StartCoroutine(!m_IsWalking ? m_FovKick.FOVKickUp() : m_FovKick.FOVKickDown());
             }
         }
-
-
         private void RotateView()
         {
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
-
-
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
             Rigidbody body = hit.collider.attachedRigidbody;
@@ -257,10 +251,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
-        }
-        public void OnCollisionEnter(Collision collision)
-        {
-            Debug.Log("Player collides with the object in the world");
-        }
+        }           
     }
 }

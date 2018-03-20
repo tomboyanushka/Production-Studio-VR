@@ -44,8 +44,7 @@ public class InventoryItemBase : InteractableItemBase
     public virtual void OnPickup()
     {
         Destroy(gameObject.GetComponent<Rigidbody>());
-        gameObject.SetActive(false);
-        
+        gameObject.SetActive(false);        
     }
 
     public Vector3 PickPosition;
