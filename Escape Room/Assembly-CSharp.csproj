@@ -51,8 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Collectable.cs" />
-     <Compile Include="Assets\Draggable.cs" />
+     <Compile Include="Assets\Scripts\Collectable.cs" />
+     <Compile Include="Assets\Scripts\Draggable.cs" />
+     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Naveen/Desktop/Project/Production-Studio-VR/Escape Room/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape Room.Plugins", "Escape Room.Plugins.csproj", "{7DC610FB-4F54-E839-2381-5B2C31C1CD71}"
-EndProject
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape Room", "Escape Room.csproj", "{114E0638-2938-25B0-5712-34867C2F3730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape Room.Plugins", "Escape Room.Plugins.csproj", "{7DC610FB-4F54-E839-2381-5B2C31C1CD71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape Room.Editor.Plugins", "Escape Room.Editor.Plugins.csproj", "{1102C65A-4B53-4110-DE74-492D7A345219}"
 EndProject
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Release|Any CPU.Build.0 = Release|Any CPU
 		{114E0638-2938-25B0-5712-34867C2F3730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{114E0638-2938-25B0-5712-34867C2F3730}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{114E0638-2938-25B0-5712-34867C2F3730}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{114E0638-2938-25B0-5712-34867C2F3730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC610FB-4F54-E839-2381-5B2C31C1CD71}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1102C65A-4B53-4110-DE74-492D7A345219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1102C65A-4B53-4110-DE74-492D7A345219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1102C65A-4B53-4110-DE74-492D7A345219}.Release|Any CPU.ActiveCfg = Release|Any CPU

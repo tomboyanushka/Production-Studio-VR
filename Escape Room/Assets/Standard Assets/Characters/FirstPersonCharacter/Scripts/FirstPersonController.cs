@@ -3,6 +3,9 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -254,6 +257,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+        public void OnCollisionEnter(Collision collision)
+        {
+            Debug.Log("Player collides with the object in the world");
         }
     }
 }

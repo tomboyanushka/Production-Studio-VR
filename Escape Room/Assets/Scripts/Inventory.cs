@@ -1,48 +1,127 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Inventory : MonoBehaviour
 {
     //Populate early
-    public List<Item> database = new List<Item>();
+    /* public List<Item> database = new List<Item>();
 
-    //Gets populated in-game
-    public List<Item> currentInventory = new List<Item>();
+     //Gets populated in-game
+     public List<Item> currentInventory = new List<Item>();
 
-    public Item heldItem;
-    private bool inventoryOpen = false;
+     public Item heldItem;
+     private bool inventoryOpen = false;
 
-    // Use this for initialization
-    void Start()
+     // Use this for initialization
+     void Start()
+     {
+         heldItem = null;
+     }
+
+     // Update is called once per frame
+     void Update()
+     {
+         // Inventory button press
+         if (Input.GetKey("I"))
+         {
+             //Open or close inventory
+             inventoryOpen = !inventoryOpen;
+             Debug.Log("Inventory Button pressed");
+         }
+     }
+
+     void Additem(int itemID)
+     {
+
+     }
+
+     void RemoveItem(int itemID)
+     {
+
+     }
+
+     void SelectItem(int itemID)
+     {
+
+     }*/
+
+
+    private const int SLOTS = 9;
+
+    private IList<InventorySlot> mSlots = new List<InventorySlot>();
+
+    public event EventHandler<InventoryEventArgs> ItemAdded;
+    public event EventHandler<InventoryEventArgs> ItemRemoved;
+    public event EventHandler<InventoryEventArgs> ItemUsed;
+
+    public Inventory()
     {
-        heldItem = null;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Inventory button press
-        if (Input.GetKey("I"))
+        for (int i = 0; i < SLOTS; i++)
         {
-            //Open or close inventory
-            inventoryOpen = !inventoryOpen;
-            Debug.Log("Inventory Button pressed");
+            mSlots.Add(new InventorySlot(i));
         }
     }
 
-    void Additem(int itemID)
+    private InventorySlot FindStackableSlot(InventoryItemBase item)
     {
-
+        foreach (InventorySlot slot in mSlots)
+        {
+            if (slot.IsStackable(item))
+                return slot;
+        }
+        return null;
     }
 
-    void RemoveItem(int itemID)
+    private InventorySlot FindNextEmptySlot()
     {
-
+        foreach (InventorySlot slot in mSlots)
+        {
+            if (slot.IsEmpty)
+                return slot;
+        }
+        return null;
     }
 
-    void SelectItem(int itemID)
+    public void AddItem(InventoryItemBase item)
     {
+        InventorySlot freeSlot = FindStackableSlot(item);
+        if (freeSlot == null)
+        {
+            freeSlot = FindNextEmptySlot();
+        }
+        if (freeSlot != null)
+        {
+            freeSlot.AddItem(item);
 
+            if (ItemAdded != null)
+            {
+                ItemAdded(this, new InventoryEventArgs(item));
+            }
+        }
+    }
+
+    internal void UseItem(InventoryItemBase item)
+    {
+        if (ItemUsed != null)
+        {
+            ItemUsed(this, new InventoryEventArgs(item));
+        }
+    }
+
+    public void RemoveItem(InventoryItemBase item)
+    {
+        foreach (InventorySlot slot in mSlots)
+        {
+            if (slot.Remove(item))
+            {
+                if (ItemRemoved != null)
+                {
+                    ItemRemoved(this, new InventoryEventArgs(item));
+                }
+                break;
+            }
+        }
     }
 }
