@@ -47,20 +47,46 @@ public class Inventory : MonoBehaviour
 
      }*/
 
-
+    public GameObject inventoryPanel;
     private const int SLOTS = 9;
-
+    public bool isInventoryPanelOpen = false;
     private IList<InventorySlot> mSlots = new List<InventorySlot>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
     public event EventHandler<InventoryEventArgs> ItemRemoved;
     public event EventHandler<InventoryEventArgs> ItemUsed;
-
+    
     public Inventory()
     {
         for (int i = 0; i < SLOTS; i++)
         {
             mSlots.Add(new InventorySlot(i));
+        }
+    }
+
+    void Update()
+    {
+        // Inventory button press
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            //Open or close inventory
+            //GameObject.FindGameObjectWithTag("Inventory");
+            //GetComponent<InventoryPanel>().showhidePanel();
+            Debug.Log("Inventory Button pressed");
+            showhidePanel();
+        }
+    }
+
+    public void showhidePanel()
+    {
+        isInventoryPanelOpen = !isInventoryPanelOpen;
+        if (isInventoryPanelOpen)
+        {
+            inventoryPanel.SetActive(true);
+        }
+        else
+        {
+            inventoryPanel.SetActive(false);
         }
     }
 

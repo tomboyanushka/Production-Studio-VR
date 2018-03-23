@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape Room", "Escape Room.csproj", "{114E0638-2938-25B0-5712-34867C2F3730}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape Room.Plugins", "Escape Room.Plugins.csproj", "{7DC610FB-4F54-E839-2381-5B2C31C1CD71}"
