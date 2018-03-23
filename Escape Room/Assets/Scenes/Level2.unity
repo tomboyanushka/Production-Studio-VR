@@ -189,10 +189,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 67741411}
-  - component: {fileID: 67741410}
   - component: {fileID: 67741409}
   - component: {fileID: 67741408}
-  - component: {fileID: 67741407}
   - component: {fileID: 67741406}
   m_Layer: 0
   m_Name: Cube
@@ -215,17 +213,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 1167062270}
---- !u!114 &67741407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 67741405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!33 &67741408
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -268,17 +255,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &67741410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 67741405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &67741411
 Transform:
   m_ObjectHideFlags: 0
@@ -2376,10 +2352,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 804246158}
-  - component: {fileID: 804246157}
   - component: {fileID: 804246156}
   - component: {fileID: 804246155}
-  - component: {fileID: 804246154}
   - component: {fileID: 804246153}
   m_Layer: 0
   m_Name: Door
@@ -2402,17 +2376,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 2006932009}
---- !u!114 &804246154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 804246152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 185759285, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!33 &804246155
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2454,17 +2417,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &804246157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 804246152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 16342205, guid: 0472bdc8d6d15384d98f22ee34302f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &804246158
 Transform:
   m_ObjectHideFlags: 0
