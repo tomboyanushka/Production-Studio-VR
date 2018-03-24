@@ -5,48 +5,6 @@ using System;
 
 public class Inventory : MonoBehaviour
 {
-    //Populate early
-    /* public List<Item> database = new List<Item>();
-
-     //Gets populated in-game
-     public List<Item> currentInventory = new List<Item>();
-
-     public Item heldItem;
-     private bool inventoryOpen = false;
-
-     // Use this for initialization
-     void Start()
-     {
-         heldItem = null;
-     }
-
-     // Update is called once per frame
-     void Update()
-     {
-         // Inventory button press
-         if (Input.GetKey("I"))
-         {
-             //Open or close inventory
-             inventoryOpen = !inventoryOpen;
-             Debug.Log("Inventory Button pressed");
-         }
-     }
-
-     void Additem(int itemID)
-     {
-
-     }
-
-     void RemoveItem(int itemID)
-     {
-
-     }
-
-     void SelectItem(int itemID)
-     {
-
-     }*/
-
     public GameObject inventoryPanel;
     private const int SLOTS = 9;
     public bool isInventoryPanelOpen = false;
@@ -69,10 +27,6 @@ public class Inventory : MonoBehaviour
         // Inventory button press
         if (Input.GetKeyDown(KeyCode.I))
         {
-            //Open or close inventory
-            //GameObject.FindGameObjectWithTag("Inventory");
-            //GetComponent<InventoryPanel>().showhidePanel();
-            Debug.Log("Inventory Button pressed");
             showhidePanel();
         }
     }
@@ -83,6 +37,7 @@ public class Inventory : MonoBehaviour
         if (isInventoryPanelOpen)
         {
             inventoryPanel.SetActive(true);
+            inventoryPanel.transform.position = new Vector3(Screen.width / 2, Screen.height / 2, 0);
         }
         else
         {
