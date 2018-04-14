@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level1 - Varun.unity
+- path: Assets/Scenes/Level2 - Naveen.unity
   isLoaded: 1
   isActive: 1
