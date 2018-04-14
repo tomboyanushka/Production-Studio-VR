@@ -1,47 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject inventoryPanel;
     private const int SLOTS = 9;
-    public bool isInventoryPanelOpen = false;
+
     private IList<InventorySlot> mSlots = new List<InventorySlot>();
 
     public event EventHandler<InventoryEventArgs> ItemAdded;
     public event EventHandler<InventoryEventArgs> ItemRemoved;
     public event EventHandler<InventoryEventArgs> ItemUsed;
-    
+
     public Inventory()
     {
         for (int i = 0; i < SLOTS; i++)
         {
             mSlots.Add(new InventorySlot(i));
-        }
-    }
-
-    void Update()
-    {
-        // Inventory button press
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            showhidePanel();
-        }
-    }
-
-    public void showhidePanel()
-    {
-        isInventoryPanelOpen = !isInventoryPanelOpen;
-        if (isInventoryPanelOpen)
-        {
-            inventoryPanel.SetActive(true);
-            inventoryPanel.transform.position = new Vector3(Screen.width / 2, Screen.height / 2, 0);
-        }
-        else
-        {
-            inventoryPanel.SetActive(false);
         }
     }
 
@@ -80,6 +56,7 @@ public class Inventory : MonoBehaviour
             {
                 ItemAdded(this, new InventoryEventArgs(item));
             }
+
         }
     }
 
@@ -103,6 +80,7 @@ public class Inventory : MonoBehaviour
                 }
                 break;
             }
+
         }
     }
 }
