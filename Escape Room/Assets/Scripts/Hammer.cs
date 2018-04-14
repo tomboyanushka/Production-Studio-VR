@@ -10,18 +10,4 @@ public class Hammer : InventoryItemBase
     { 
         base.OnUse();
     }
-     
-
-  /*  private void Start()
-   {
-        
-    }
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            Debug.Log("Hammer is collected");
-        }
-    }*/
-
 }
