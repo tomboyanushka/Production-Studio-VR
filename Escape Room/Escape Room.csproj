@@ -293,27 +293,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\InventoryPanel.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\Axe.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\Crate.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\DamageSource.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\FirstAid.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\GameManager.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\Gem.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\HealthBar.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\HUD.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\Inventory.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\InventoryItem.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\InventoryItemBase.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\InventorySlot.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\ItemClickHandler.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\ItemDragHandler.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\ItemDropHandler.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\LowPolyNature\Scripts\PlayerFollow.cs" />
     <Compile Include="Assets\Rock2.cs" />
-    <Compile Include="Assets\Scripts\Collectable.cs" />
-    <Compile Include="Assets\Scripts\Draggable.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Gem.cs" />
     <Compile Include="Assets\Scripts\Hammer.cs" />
+    <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\HUD.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\InventoryItemBase.cs" />
+    <Compile Include="Assets\Scripts\InventorySlot.cs" />
+    <Compile Include="Assets\Scripts\ItemClickHandler.cs" />
+    <Compile Include="Assets\Scripts\ItemDragHandler.cs" />
+    <Compile Include="Assets\Scripts\ItemDropHandler.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
