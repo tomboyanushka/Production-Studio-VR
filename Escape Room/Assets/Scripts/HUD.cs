@@ -7,7 +7,7 @@ public class HUD : MonoBehaviour
 {
     public Inventory Inventory;
 
-    public GameObject DisplayPanel;
+    public GameObject MessagePanel;
 
 	// Use this for initialization
 	void Start ()
@@ -31,7 +31,6 @@ public class HUD : MonoBehaviour
             Text txtCount = textTransform.GetComponent<Text>();
             ItemDragHandler itemDragHandler = imageTransform.GetComponent<ItemDragHandler>();
 
-           
             if(index == e.Item.Slot.Id)
             {
                 image.enabled = true;
@@ -41,7 +40,7 @@ public class HUD : MonoBehaviour
                 if (itemCount > 1)
                     txtCount.text = itemCount.ToString();
                 else
-                    txtCount.text = "";                        
+                    txtCount.text = "";                         
 
                 // Store a reference to the item
                 itemDragHandler.Item = e.Item;
@@ -93,7 +92,8 @@ public class HUD : MonoBehaviour
                     image.sprite = null;
                 }
                 break;
-            }           
+            }
+           
         }
     }
 
@@ -104,19 +104,20 @@ public class HUD : MonoBehaviour
         get { return mIsMessagePanelOpened; }
     }
 
-    public void OpenDisplayPanel(InteractableItemBase item)
+    public void OpenMessagePanel(InteractableItemBase item)
     {
-        DisplayPanel.SetActive(true);
+        Debug.Log("OpenMessagePanel");
+        MessagePanel.SetActive(true);
 
-        Text mpText = DisplayPanel.transform.Find("Text").GetComponent<Text>();
+        Text mpText = MessagePanel.transform.Find("Text").GetComponent<Text>();
         mpText.text = item.InteractText;
-
+        
         mIsMessagePanelOpened = true;
     }
 
-    public void CloseDisplayPanel()
+    public void CloseMessagePanel()
     {
-        DisplayPanel.SetActive(false);
+        MessagePanel.SetActive(false);
 
         mIsMessagePanelOpened = false;
     }
