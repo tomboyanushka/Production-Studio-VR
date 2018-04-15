@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level 1 Assets placed - Varun.unity
+- path: Assets/Scenes/Level2Working.unity
   isLoaded: 1
   isActive: 1

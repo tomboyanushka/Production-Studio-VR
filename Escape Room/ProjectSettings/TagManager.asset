@@ -11,6 +11,7 @@ TagManager:
   - OnOff
   - Rock
   - Tooth
+  - Coin
   layers:
   - Default
   - TransparentFX
