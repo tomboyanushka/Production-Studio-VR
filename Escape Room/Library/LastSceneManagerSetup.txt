@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/LatestBurhanLevel2Working.unity
+- path: Assets/Scenes/Level 2 Floor placed - Varun.unity
   isLoaded: 1
   isActive: 1
