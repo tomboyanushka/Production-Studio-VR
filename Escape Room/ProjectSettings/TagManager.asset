@@ -11,6 +11,9 @@ TagManager:
   - OnOff
   - Rock
   - Tooth
+  - Coin
+  - Candle
+  - Pillow
   layers:
   - Default
   - TransparentFX
