@@ -995,11 +995,12 @@
     <Compile Include="Assets\Scripts\Level2Order.cs" />
     <Compile Include="Assets\Scripts\OpenBox.cs" />
     <Compile Include="Assets\Scripts\PiggyBank.cs" />
+    <Compile Include="Assets\Scripts\Pillow.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerFollow.cs" />
+    <Compile Include="Assets\Scripts\Tooth.cs" />
     <Compile Include="Assets\Scripts\WallLvl2.cs" />
     <Compile Include="Assets\Switch.cs" />
-    <Compile Include="Assets\Tooth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FBX Models\Jose\Level01_WIP\firstLevel_01\OpenMayaErrorLog.txt" />
