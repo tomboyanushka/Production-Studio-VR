@@ -118,7 +118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1120392929826216
 GameObject:
   m_ObjectHideFlags: 1
@@ -1117,7 +1117,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Press F to pickup -'
+  m_Text: Press F to pickup the item
 --- !u!114 &114217408186876348
 MonoBehaviour:
   m_ObjectHideFlags: 1
