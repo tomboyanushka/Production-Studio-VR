@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Level1 - Anushka.unity
+- path: Assets/Scenes/Level 1 Floor placed - Varun.unity
   isLoaded: 1
   isActive: 1
