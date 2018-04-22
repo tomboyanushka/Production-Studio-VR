@@ -12,11 +12,12 @@ public class Pillow : MonoBehaviour {
     GameObject tooth;
     public bool startAnimation2;
     float startTime;
-
+    public bool isWallBroken;
 	// Use this for initialization
 	void Start () {
         posInitial = transform.position;
         interactingWithTooth = false;
+        isWallBroken = false;
     }
 	
 	// Update is called once per frame
