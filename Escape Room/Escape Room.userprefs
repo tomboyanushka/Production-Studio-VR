@@ -1,13 +1,6 @@
 ﻿<Properties StartupItem="Escape Room.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Level1Order.cs">
-    <Files>
-      <File FileName="Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\InventoryPanel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Level1Order.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
