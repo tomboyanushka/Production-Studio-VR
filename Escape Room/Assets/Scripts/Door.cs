@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class Door : MonoBehaviour {
 
-	// Use this for initialization
+    // Use this for initialization
+    public bool doStuff;
 	void Start () {
-        if (Candle.candlesLit >= 4)
-        {
-            OpenDoor();
-        }
+        doStuff = false;
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Candle.candlesLit >= 4 || doStuff == true)
+        {
+            OpenDoor();
+        }
+    }
 
     void OpenDoor()
     {
-
+        GetComponent<Animator>().SetBool("OpenDoor", true);
     }
 }
