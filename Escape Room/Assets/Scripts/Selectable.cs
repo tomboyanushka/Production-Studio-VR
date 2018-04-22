@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Selectable : MonoBehaviour, IInputClickHandler
 {
+    public FishScript fishManager;
     [Tooltip("Object color changes to this when selected.")]
     public Color SelectedColor = Color.red;
 
@@ -26,7 +27,7 @@ public class Selectable : MonoBehaviour, IInputClickHandler
 
     public void OnSelectObject()
     {
-        //cachedMaterial.SetColor("_Color", SelectedColor);
+        fishManager.OnSelect(gameObject);
     }
 
     public void OnClearSelection()
