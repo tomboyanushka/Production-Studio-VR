@@ -10,7 +10,7 @@ public class Pillow : MonoBehaviour {
     Vector3 posInitial;
     Vector3 posEnd;
     GameObject tooth;
-
+    public bool startAnimation2;
     float startTime;
 
 	// Use this for initialization
@@ -30,6 +30,10 @@ public class Pillow : MonoBehaviour {
                 CreateCoin();
                 startTime = 0.0f;
             }
+        }
+        if (startAnimation2)
+        {
+            MyAnimation2();
         }
 	}
 
@@ -70,5 +74,9 @@ public class Pillow : MonoBehaviour {
         }
     }
 
+    void MyAnimation2()
+    {
+        GetComponent<Animator>().SetBool("startAnimation2", true);
+    }
 
 }
