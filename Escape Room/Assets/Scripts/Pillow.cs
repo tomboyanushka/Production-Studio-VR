@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pillow : MonoBehaviour {
 
+    [SerializeField] GameObject coin;
+    public bool coinCreated = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,13 +18,22 @@ public class Pillow : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Colliding");
         if (col.CompareTag("Tooth"))
         {
             Debug.Log("Colliding");
             //Animation
             //Create object of coin too
+            CreateCoin();
             Destroy(col.gameObject);
+        }
+    }
+
+    void CreateCoin()
+    {
+        if (!coinCreated)
+        {
+            coinCreated = true;
+            Instantiate(coin, new Vector3(9.509f, 0.859f, -11.30f), Quaternion.identity);
         }
     }
 }
