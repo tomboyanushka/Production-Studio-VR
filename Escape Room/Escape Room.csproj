@@ -831,6 +831,7 @@
     <Compile Include="Assets\HoloToolkit-Examples\Input\Scripts\TestOverrideFocusedObject.cs" />
     <Compile Include="Assets\HoloToolkit-Examples\Input\Scripts\TogglePopupMenu.cs" />
     <Compile Include="Assets\HoloToolkit-Examples\Input\Scripts\XboxControllerHandlerTest.cs" />
+    <Compile Include="Assets\HoloToolkit-Examples\Medical\Scripts\BalloonScript.cs" />
     <Compile Include="Assets\HoloToolkit-Examples\Medical\Scripts\RestrictToBounds.cs" />
     <Compile Include="Assets\HoloToolkit-Examples\Medical\Scripts\SlicingPlaneController.cs" />
     <Compile Include="Assets\HoloToolkit-Examples\Medical\Scripts\TapToPlaceScene.cs" />
@@ -979,6 +980,7 @@
     <Compile Include="Assets\Rock2.cs" />
     <Compile Include="Assets\Scripts\Candle.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\FishScript.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Gem.cs" />
     <Compile Include="Assets\Scripts\Hammer.cs" />
@@ -1000,6 +1002,7 @@
     <Compile Include="Assets\Scripts\Pillow.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerFollow.cs" />
+    <Compile Include="Assets\Scripts\Selectable.cs" />
     <Compile Include="Assets\Scripts\Tooth.cs" />
     <Compile Include="Assets\Scripts\WallLvl2.cs" />
   </ItemGroup>
