@@ -954,8 +954,10 @@
     <Compile Include="Assets\Scripts\ItemClickHandler.cs" />
     <Compile Include="Assets\Scripts\ItemDragHandler.cs" />
     <Compile Include="Assets\Scripts\ItemDropHandler.cs" />
+    <Compile Include="Assets\Scripts\KeyScript.cs" />
     <Compile Include="Assets\Scripts\Level1Order.cs" />
     <Compile Include="Assets\Scripts\Level2Order.cs" />
+    <Compile Include="Assets\Scripts\ObjectGrab.cs" />
     <Compile Include="Assets\Scripts\OpenBox.cs" />
     <Compile Include="Assets\Scripts\PiggyBank.cs" />
     <Compile Include="Assets\Scripts\Pillow.cs" />

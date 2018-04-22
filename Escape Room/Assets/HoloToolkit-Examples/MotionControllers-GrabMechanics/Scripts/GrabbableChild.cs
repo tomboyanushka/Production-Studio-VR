@@ -11,6 +11,7 @@ namespace HoloToolkit.Unity.InputModule.Examples.Grabbables
     /// </summary>
     public class GrabbableChild : BaseGrabbable
     {
+
         protected override void StartGrab(BaseGrabber grabber)
         {
             base.StartGrab(grabber);
