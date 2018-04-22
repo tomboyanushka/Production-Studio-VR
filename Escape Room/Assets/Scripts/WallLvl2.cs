@@ -22,6 +22,8 @@ public class WallLvl2 : MonoBehaviour
         if (col.CompareTag("Hammer"))
         {
             Debug.Log("Colliding");
+            // Play music of wall shattering
+            GameObject.Find("pillow").GetComponent<Pillow>().isWallBroken = true;
             Destroy(gameObject);
         }
     }
