@@ -5,7 +5,7 @@ using UnityEngine;
 public class Candle : MonoBehaviour {
 
     public static int candlesLit = 0;
-    private bool isCandleLit;
+    public bool isCandleLit;
 	// Use this for initialization
 	void Start () {
         isCandleLit = false;
@@ -15,18 +15,20 @@ public class Candle : MonoBehaviour {
 	void Update () {
      
 	}
-
-    void OnTriggerEnter(Collider col)
+  
+    void OnTriggerStay(Collider col)
     {
-        if (col.CompareTag("Rock") && !isCandleLit && Rocky.rocksColliding)
+        if (col.CompareTag("Rock") && !isCandleLit && FireRocks.rocksColliding && GameObject.Find("Lights").GetComponent<Lights>().lightsOnceTurnedOff)
         {
             Debug.Log("CandleLit");
             isCandleLit = true;
             Candle.candlesLit += 1;
+            if (Candle.candlesLit >= 4)
+            {
+                GameObject.Find("Lights").GetComponent<Lights>().FireAlarm();
+                GameObject.Find("Door").GetComponent<Door>().OpenDoor();
+            }
             //Apply flames here
-
-            //Temperory
-            Destroy(gameObject);
         }
     }
 }

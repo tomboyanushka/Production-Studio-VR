@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PiggyBank : MonoBehaviour {
-    public bool jugaad = false;
     bool coinEntered;
     [SerializeField] private GameObject rock1;
     [SerializeField] private GameObject rock2;
@@ -27,11 +26,14 @@ public class PiggyBank : MonoBehaviour {
             coinEntered = true;
         }
 
-        if ((col.CompareTag("Hammer") & coinEntered) || jugaad)
+        if (col.CompareTag("Hammer") & coinEntered)
         {
-            Instantiate(rock1, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z - 0.5f), Quaternion.identity);
-            Instantiate(rock2, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z + 0.5f), Quaternion.identity);
+            Instantiate(rock1, new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z - 0.5f), Quaternion.identity);
+            Instantiate(rock2, new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z + 0.5f), Quaternion.identity);
             Debug.Log("Destroy PiggyBank");
+            GameObject.Find("Lights").GetComponent<Lights>().isPiggyBankBroken = true;
+
+            //Play sound
             Destroy(gameObject);
         }
     }

@@ -33,8 +33,10 @@ public class LightSwitchGrab : MonoBehaviour, IInputClickHandler
 
     public void OnSelectObject()
     {
-        Debug.Log("Boss");
-        GameObject.Find("Lights").GetComponent<Lights>().areLightsOn = false;//!GameObject.Find("Lights").GetComponent<Lights>().areLightsOn;
+        if (GameObject.Find("Lights").GetComponent<Lights>().isPiggyBankBroken)
+        {
+            GameObject.Find("Lights").GetComponent<Lights>().SwitchLights();
+        }
     }
 
     public void OnClearSelection()

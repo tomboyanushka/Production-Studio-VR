@@ -35,7 +35,7 @@ public class PillowGrab : MonoBehaviour, IInputClickHandler
     {
         if (GetComponent<Pillow>().coinCreated)
         {
-            GetComponent<Pillow>().startAnimation2 = true;
+            GetComponent<Pillow>().MyAnimation2();
         }
     }
 

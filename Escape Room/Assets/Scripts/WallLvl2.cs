@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WallLvl2 : MonoBehaviour
 {
-
+    [SerializeField] GameObject tooth;
 	// Use this for initialization
 	void Start () {
 		
@@ -21,7 +21,8 @@ public class WallLvl2 : MonoBehaviour
         if (col.CompareTag("Hammer"))
         {
             Debug.Log("Colliding");
-            // Play music of wall shattering
+            // Play music of wall shattering and tooth breaking
+            Instantiate(tooth, new Vector3(5.0f, 1.0f, 0.0f), Quaternion.identity);
             GameObject.Find("pillow").GetComponent<Pillow>().isWallBroken = true;
             Destroy(gameObject);
         }

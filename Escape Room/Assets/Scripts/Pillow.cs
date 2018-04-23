@@ -7,15 +7,11 @@ public class Pillow : MonoBehaviour {
     [SerializeField] private GameObject coin;
     public bool coinCreated = false;
     bool interactingWithTooth;
-    Vector3 posInitial;
-    Vector3 posEnd;
     GameObject tooth;
-    public bool startAnimation2;
     float startTime;
     public bool isWallBroken;
 	// Use this for initialization
 	void Start () {
-        posInitial = transform.position;
         interactingWithTooth = false;
         isWallBroken = false;
     }
@@ -24,32 +20,25 @@ public class Pillow : MonoBehaviour {
 	void Update () {
 		if (interactingWithTooth)
         {
-            MyAnimation1();
             startTime += Time.deltaTime;
             if (startTime >= 2.0f)
             {
+                MyAnimation1();
                 CreateCoin();
                 startTime = 0.0f;
             }
-        }
-        if (startAnimation2)
-        {
-            MyAnimation2();
         }
 	}
 
     void OnTriggerEnter(Collider col)
     {
         //This should honestly trigger only if we interact with raycasting. And also if we know the clue
-        if (!interactingWithTooth && col.CompareTag("Tooth"))
+        if (isWallBroken && !interactingWithTooth && col.CompareTag("Tooth"))
         {
             startTime = 0.0f;
             //If interact, animate
             interactingWithTooth = true;
-            GetComponent<Animator>().SetBool("startAnimation1", true);
-            
-            posEnd = posInitial;
-            posEnd.y += 0.5f;
+            GetComponent<Animator>().SetBool("startAnimation1", true); 
             tooth = col.gameObject;
         }
     }
@@ -75,7 +64,7 @@ public class Pillow : MonoBehaviour {
         }
     }
 
-    void MyAnimation2()
+    public void MyAnimation2()
     {
         GetComponent<Animator>().SetBool("startAnimation2", true);
     }
