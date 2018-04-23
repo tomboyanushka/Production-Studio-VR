@@ -32,12 +32,12 @@ public class LockScript : MonoBehaviour
         orientationMap.Add(0, new Orientation(new Vector3(0, 0.2f, 0.22f), new Vector3(36, 0, 0)));
     }
 
-    void IncrementIndex()
+    public void IncrementIndex()
     {
         currentIndex = (currentIndex + 1) % 10;
     }
 
-    void SetIndex(int index)
+    public void SetIndex(int index)
     {
         currentIndex = index;
         var orientation = orientationMap[currentIndex];
