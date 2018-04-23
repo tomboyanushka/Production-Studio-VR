@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorScript : MonoBehaviour {
-
+public class DoorScript : MonoBehaviour
+{
+    public bool openDoor = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,8 +19,14 @@ public class DoorScript : MonoBehaviour {
     {
         if (other.gameObject.name == "DoorKey")
         {
-            //open the door
+            openDoor = true;
+            if (openDoor == true)
+            {
+                GetComponent<Animator>().SetBool("DoorOpen", true);
+                openDoor = false;
+            }
 
         }
     }
+
 }

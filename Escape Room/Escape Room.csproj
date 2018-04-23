@@ -940,6 +940,7 @@
     <Compile Include="Assets\InventoryPanel.cs" />
     <Compile Include="Assets\Rock2.cs" />
     <Compile Include="Assets\Scripts\Candle.cs" />
+    <Compile Include="Assets\Scripts\DialSelector.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\DoorScript.cs" />
     <Compile Include="Assets\Scripts\DrawerScript.cs" />
@@ -961,6 +962,7 @@
     <Compile Include="Assets\Scripts\Level2Order.cs" />
     <Compile Include="Assets\Scripts\Lights.cs" />
     <Compile Include="Assets\Scripts\LightSwitch.cs" />
+    <Compile Include="Assets\Scripts\LockController.cs" />
     <Compile Include="Assets\Scripts\LockScript.cs" />
     <Compile Include="Assets\Scripts\ObjectGrab.cs" />
     <Compile Include="Assets\Scripts\OpenBox.cs" />
