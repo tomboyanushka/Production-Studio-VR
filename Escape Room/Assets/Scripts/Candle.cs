@@ -18,12 +18,15 @@ public class Candle : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.CompareTag("Rock") && !isCandleLit)
+        if (col.CompareTag("Rock") && !isCandleLit && Rocky.rocksColliding)
         {
             Debug.Log("CandleLit");
             isCandleLit = true;
             Candle.candlesLit += 1;
             //Apply flames here
+
+            //Temperory
+            Destroy(gameObject);
         }
     }
 }

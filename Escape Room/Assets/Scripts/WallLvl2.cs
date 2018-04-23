@@ -18,7 +18,6 @@ public class WallLvl2 : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Colliding");
         if (col.CompareTag("Hammer"))
         {
             Debug.Log("Colliding");

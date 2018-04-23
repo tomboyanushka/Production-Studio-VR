@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PiggyBank : MonoBehaviour {
-
+    public bool jugaad = false;
     bool coinEntered;
+    [SerializeField] private GameObject rock1;
+    [SerializeField] private GameObject rock2;
+
 	// Use this for initialization
 	void Start () {
         coinEntered = false;
@@ -17,7 +20,6 @@ public class PiggyBank : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Colliding");
         if (col.CompareTag("Coin"))
         {
             Debug.Log("Coin Entered");
@@ -25,8 +27,10 @@ public class PiggyBank : MonoBehaviour {
             coinEntered = true;
         }
 
-        if (col.CompareTag("Hammer") & coinEntered)
+        if ((col.CompareTag("Hammer") & coinEntered) || jugaad)
         {
+            Instantiate(rock1, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z - 0.5f), Quaternion.identity);
+            Instantiate(rock2, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z + 0.5f), Quaternion.identity);
             Debug.Log("Destroy PiggyBank");
             Destroy(gameObject);
         }
