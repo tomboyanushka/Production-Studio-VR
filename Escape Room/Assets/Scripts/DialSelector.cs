@@ -10,6 +10,7 @@ public class DialSelector : MonoBehaviour, IInputClickHandler
 
     private Color originalColor;
     private Material cachedMaterial;
+    float timeDelay = 0F;
 
     private void OnEnable()
     {
@@ -26,13 +27,22 @@ public class DialSelector : MonoBehaviour, IInputClickHandler
 
     public void OnSelectObject()
     {
-        GetComponent<LockScript>().IncrementIndex();
+        if (timeDelay > 0.2F)
+        {
+            GetComponent<LockScript>().IncrementIndex();
+            timeDelay = 0F;
+        }
         
     }
 
     public void OnClearSelection()
     {
         //cachedMaterial.SetColor("_Color", originalColor);
+    }
+
+    void Update()
+    {
+        timeDelay += Time.deltaTime;
     }
 
 

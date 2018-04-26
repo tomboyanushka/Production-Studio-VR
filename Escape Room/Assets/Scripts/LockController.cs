@@ -22,7 +22,8 @@ public class LockController : MonoBehaviour
         if (CheckCombo())
         {
             drawer.isLockOpen = true;
-            DestroyImmediate(this.gameObject);
+            drawer.Unlock();
+            gameObject.SetActive(false);
         }
 	}
 

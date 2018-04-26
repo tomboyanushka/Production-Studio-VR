@@ -5,20 +5,21 @@ using UnityEngine;
 
 public class DrawerScript : MonoBehaviour
 {
-    public bool isLockOpen = false ;
+    public bool isLockOpen = false;
 
 	void Start ()
     {
 		
 	}
 	
+    public void Unlock()
+    {
+        isLockOpen = true;
+        var grab = GetComponent<GrabbableChild>();
+        grab.enabled = true;
+    }
 
 	void Update ()
     {
-        if (isLockOpen)
-        {
-            var grab = GetComponent<GrabbableChild>();
-            grab.enabled = true;
-        }
 	}
 }
