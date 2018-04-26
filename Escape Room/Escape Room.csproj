@@ -977,6 +977,7 @@
     <Compile Include="Assets\HoloToolkit-Examples\UX\Scripts\Widgets\TextMeshColorThemeWidget.cs" />
     <Compile Include="Assets\HoloToolkit-Examples\UX\Scripts\Widgets\TextureThemeWidget.cs" />
     <Compile Include="Assets\InventoryPanel.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Candle.cs" />
     <Compile Include="Assets\Scripts\DialSelector.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
