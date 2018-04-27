@@ -33,7 +33,7 @@ public class ObjectGrab : MonoBehaviour, IInputClickHandler
 
     public void OnSelectObject()
     {
-        GetComponentInParent<KeyScript>().isLerpToPlayer = true;
+        GetComponent<KeyScript>().isLerpToPlayer = true;
     }
 
     public void OnClearSelection()
