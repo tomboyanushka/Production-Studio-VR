@@ -27,7 +27,7 @@ public class BalloonScript : MonoBehaviour
     {
         if(isInstantiated)
         {
-            balloonInstance.transform.position = Vector3.Lerp(balloonInstance.transform.position, endPos, 0.001F);
+            balloonInstance.transform.position = Vector3.Lerp(balloonInstance.transform.position, endPos, 0.005F);
         }
     }
 

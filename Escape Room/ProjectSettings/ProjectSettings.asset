@@ -570,8 +570,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: EscapeRoom
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: C:\Users\Burhanuddin\OneDrive\Documents\UnityProjects\ProductionStudio\Production-Studio-VR\Escape
-    Room\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
