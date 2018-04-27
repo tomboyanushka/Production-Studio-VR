@@ -6,9 +6,9 @@ using UnityEngine;
 public class Door : MonoBehaviour {
 
     bool doorOpen;
-
+    [SerializeField] private AudioClip doorCreakOpen;
     // Use this for initialization
-	void Start () {
+    void Start () {
         doorOpen = false;
     }
 	
@@ -28,6 +28,7 @@ public class Door : MonoBehaviour {
 
     public void OpenDoor()
     {
+        AudioSource.PlayClipAtPoint(doorCreakOpen, transform.position);
         GetComponent<Animator>().SetBool("OpenDoor", true);
         doorOpen = true;
     }

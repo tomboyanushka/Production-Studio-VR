@@ -10,9 +10,15 @@ public class Lights : MonoBehaviour
     public bool isFireAlarm;
     // Use this for initialization
 
-    [SerializeField] private AudioClip fireAlarmSound;
     private AudioSource source;
 
+    private GameObject[] normalClues;
+    private GameObject inviClue;
+
+    private void Awake()
+    {
+        normalClues = GameObject.FindGameObjectsWithTag("Clue");
+    }
     void Start ()
     {
         lightsOnceTurnedOff = false;
@@ -20,12 +26,13 @@ public class Lights : MonoBehaviour
         isFireAlarm = false;
         isPiggyBankBroken = false;
         source = GetComponent<AudioSource>();
+        inviClue = GameObject.FindGameObjectWithTag("InviClue");
+        inviClue.SetActive(false);
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-
     }
 
     public void SwitchLights()
@@ -41,12 +48,11 @@ public class Lights : MonoBehaviour
                 transform.GetChild(i).gameObject.SetActive(false);
 
             }
-            GameObject[] normalClues = GameObject.FindGameObjectsWithTag("Clue");
             foreach (var clue in normalClues)
             {
                 clue.SetActive(false);
             }
-            GameObject.FindGameObjectWithTag("InvisibleClue").SetActive(true);
+            inviClue.SetActive(true);
         }
         else if (areLightsOn >= 4)
         {
@@ -54,12 +60,12 @@ public class Lights : MonoBehaviour
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
-            GameObject[] normalClues = GameObject.FindGameObjectsWithTag("Clue");
+            
             foreach (var clue in normalClues)
             {
                 clue.SetActive(true);
             }
-            GameObject.FindGameObjectWithTag("InvisibleClue").SetActive(false);
+            inviClue.SetActive(false);
             areLightsOn = 0;
         }
     }
@@ -72,12 +78,12 @@ public class Lights : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(true);
             transform.GetChild(i).GetComponent<Light>().color = Color.red;
         }
-        GameObject[] normalClues = GameObject.FindGameObjectsWithTag("Clue");
+
         foreach (var clue in normalClues)
         {
-            clue.SetActive(false);
+            clue.SetActive(true);
         }
-        GameObject.FindGameObjectWithTag("InvisibleClue").SetActive(true);
-        //source.playOnAwake(fireAlarmSound, true);
+        inviClue.SetActive(false);
+        source.Play();
     }
 }

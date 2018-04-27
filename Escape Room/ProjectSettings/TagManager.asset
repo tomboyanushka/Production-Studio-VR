@@ -15,6 +15,7 @@ TagManager:
   - Candle
   - Pillow
   - Clue
+  - InviClue
   - Tip
   - FinalBox
   layers:
