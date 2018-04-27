@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorScript : MonoBehaviour
 {
@@ -17,13 +18,14 @@ public class DoorScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "DoorKey")
+        if (other.gameObject.tag == "DoorKey")
         {
             openDoor = true;
             if (openDoor == true)
             {
-                GetComponent<Animator>().SetBool("DoorOpen", true);
-                openDoor = false;
+                //GetComponent<Animator>().SetBool("DoorOpen", true);
+                //openDoor = false;
+                SceneManager.LoadScene("Second Level", LoadSceneMode.Single);
             }
 
         }

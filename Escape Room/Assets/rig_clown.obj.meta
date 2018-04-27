@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: 15514c89b2acd1f4b8545136eda8a1a9
+timeCreated: 1524808149
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Chip_baseMesh_clown_polySurface1_polySurface520_polySurface1_polySurface552
+    100002: Chip_baseMesh_clown_polySurface1_polySurface521_polySurface1_polySurface553
+    100004: Chip_baseMesh_clown_polySurface1_polySurface522_polySurface1_polySurface549
+    100006: Chip_baseMesh_clown_polySurface1_polySurface523_polySurface1_polySurface551
+    100008: Chip_baseMesh_clown_polySurface1_polySurface524_polySurface1_polySurface550
+    100010: Chip_baseMesh_clown_polySurface1_polySurface525_polySurface1_polySurface548
+    100012: Chip_baseMesh_clown_polySurface1_polySurface526_polySurface1_polySurface546
+    100014: Chip_baseMesh_clown_polySurface1_polySurface527_polySurface1_polySurface545
+    100016: Chip_baseMesh_clown_polySurface1_polySurface528_polySurface1_polySurface540
+    100018: Chip_baseMesh_clown_polySurface1_polySurface529_polySurface1_polySurface539
+    100020: Chip_baseMesh_clown_polySurface1_polySurface530_polySurface1_polySurface547
+    100022: Chip_baseMesh_clown_polySurface1_polySurface531_polySurface1_polySurface543
+    100024: Chip_baseMesh_clown_polySurface1_polySurface532_polySurface1_polySurface544
+    100026: Chip_baseMesh_clown_polySurface1_polySurface533_polySurface1_polySurface542
+    100028: Chip_baseMesh_clown_polySurface1_polySurface534_polySurface1_polySurface541
+    100030: Chip_baseMesh_clown_polySurface1_polySurface535_polySurface1_polySurface537
+    100032: floor_polySurface536_polySurface1
+    100034: pSphere3_polySurface1_polySurface554
+    100036: pSphere4_polySurface1_polySurface538
+    100038: //RootNode
+    400000: Chip_baseMesh_clown_polySurface1_polySurface520_polySurface1_polySurface552
+    400002: Chip_baseMesh_clown_polySurface1_polySurface521_polySurface1_polySurface553
+    400004: Chip_baseMesh_clown_polySurface1_polySurface522_polySurface1_polySurface549
+    400006: Chip_baseMesh_clown_polySurface1_polySurface523_polySurface1_polySurface551
+    400008: Chip_baseMesh_clown_polySurface1_polySurface524_polySurface1_polySurface550
+    400010: Chip_baseMesh_clown_polySurface1_polySurface525_polySurface1_polySurface548
+    400012: Chip_baseMesh_clown_polySurface1_polySurface526_polySurface1_polySurface546
+    400014: Chip_baseMesh_clown_polySurface1_polySurface527_polySurface1_polySurface545
+    400016: Chip_baseMesh_clown_polySurface1_polySurface528_polySurface1_polySurface540
+    400018: Chip_baseMesh_clown_polySurface1_polySurface529_polySurface1_polySurface539
+    400020: Chip_baseMesh_clown_polySurface1_polySurface530_polySurface1_polySurface547
+    400022: Chip_baseMesh_clown_polySurface1_polySurface531_polySurface1_polySurface543
+    400024: Chip_baseMesh_clown_polySurface1_polySurface532_polySurface1_polySurface544
+    400026: Chip_baseMesh_clown_polySurface1_polySurface533_polySurface1_polySurface542
+    400028: Chip_baseMesh_clown_polySurface1_polySurface534_polySurface1_polySurface541
+    400030: Chip_baseMesh_clown_polySurface1_polySurface535_polySurface1_polySurface537
+    400032: floor_polySurface536_polySurface1
+    400034: pSphere3_polySurface1_polySurface554
+    400036: pSphere4_polySurface1_polySurface538
+    400038: //RootNode
+    2100000: Chip_baseMesh_clown_polySurface1_polySurface520_polySurface1_polySurface552Mat
+    2100002: Chip_baseMesh_clown_polySurface1_polySurface521_polySurface1_polySurface553Mat
+    2100004: Chip_baseMesh_clown_polySurface1_polySurface522_polySurface1_polySurface549Mat
+    2100006: Chip_baseMesh_clown_polySurface1_polySurface523_polySurface1_polySurface551Mat
+    2100008: Chip_baseMesh_clown_polySurface1_polySurface524_polySurface1_polySurface550Mat
+    2100010: Chip_baseMesh_clown_polySurface1_polySurface525_polySurface1_polySurface548Mat
+    2100012: Chip_baseMesh_clown_polySurface1_polySurface526_polySurface1_polySurface546Mat
+    2100014: Chip_baseMesh_clown_polySurface1_polySurface527_polySurface1_polySurface545Mat
+    2100016: Chip_baseMesh_clown_polySurface1_polySurface528_polySurface1_polySurface540Mat
+    2100018: Chip_baseMesh_clown_polySurface1_polySurface529_polySurface1_polySurface539Mat
+    2100020: Chip_baseMesh_clown_polySurface1_polySurface530_polySurface1_polySurface547Mat
+    2100022: Chip_baseMesh_clown_polySurface1_polySurface531_polySurface1_polySurface543Mat
+    2100024: Chip_baseMesh_clown_polySurface1_polySurface532_polySurface1_polySurface544Mat
+    2100026: Chip_baseMesh_clown_polySurface1_polySurface533_polySurface1_polySurface542Mat
+    2100028: Chip_baseMesh_clown_polySurface1_polySurface534_polySurface1_polySurface541Mat
+    2100030: Chip_baseMesh_clown_polySurface1_polySurface535_polySurface1_polySurface537Mat
+    2100032: floor_polySurface536_polySurface1Mat
+    2100034: pSphere3_polySurface1_polySurface554Mat
+    2100036: pSphere4_polySurface1_polySurface538Mat
+    2300000: Chip_baseMesh_clown_polySurface1_polySurface520_polySurface1_polySurface552
+    2300002: Chip_baseMesh_clown_polySurface1_polySurface521_polySurface1_polySurface553
+    2300004: Chip_baseMesh_clown_polySurface1_polySurface522_polySurface1_polySurface549
+    2300006: Chip_baseMesh_clown_polySurface1_polySurface523_polySurface1_polySurface551
+    2300008: Chip_baseMesh_clown_polySurface1_polySurface524_polySurface1_polySurface550
+    2300010: Chip_baseMesh_clown_polySurface1_polySurface525_polySurface1_polySurface548
+    2300012: Chip_baseMesh_clown_polySurface1_polySurface526_polySurface1_polySurface546
+    2300014: Chip_baseMesh_clown_polySurface1_polySurface527_polySurface1_polySurface545
+    2300016: Chip_baseMesh_clown_polySurface1_polySurface528_polySurface1_polySurface540
+    2300018: Chip_baseMesh_clown_polySurface1_polySurface529_polySurface1_polySurface539
+    2300020: Chip_baseMesh_clown_polySurface1_polySurface530_polySurface1_polySurface547
+    2300022: Chip_baseMesh_clown_polySurface1_polySurface531_polySurface1_polySurface543
+    2300024: Chip_baseMesh_clown_polySurface1_polySurface532_polySurface1_polySurface544
+    2300026: Chip_baseMesh_clown_polySurface1_polySurface533_polySurface1_polySurface542
+    2300028: Chip_baseMesh_clown_polySurface1_polySurface534_polySurface1_polySurface541
+    2300030: Chip_baseMesh_clown_polySurface1_polySurface535_polySurface1_polySurface537
+    2300032: floor_polySurface536_polySurface1
+    2300034: pSphere3_polySurface1_polySurface554
+    2300036: pSphere4_polySurface1_polySurface538
+    3300000: Chip_baseMesh_clown_polySurface1_polySurface520_polySurface1_polySurface552
+    3300002: Chip_baseMesh_clown_polySurface1_polySurface521_polySurface1_polySurface553
+    3300004: Chip_baseMesh_clown_polySurface1_polySurface522_polySurface1_polySurface549
+    3300006: Chip_baseMesh_clown_polySurface1_polySurface523_polySurface1_polySurface551
+    3300008: Chip_baseMesh_clown_polySurface1_polySurface524_polySurface1_polySurface550
+    3300010: Chip_baseMesh_clown_polySurface1_polySurface525_polySurface1_polySurface548
+    3300012: Chip_baseMesh_clown_polySurface1_polySurface526_polySurface1_polySurface546
+    3300014: Chip_baseMesh_clown_polySurface1_polySurface527_polySurface1_polySurface545
+    3300016: Chip_baseMesh_clown_polySurface1_polySurface528_polySurface1_polySurface540
+    3300018: Chip_baseMesh_clown_polySurface1_polySurface529_polySurface1_polySurface539
+    3300020: Chip_baseMesh_clown_polySurface1_polySurface530_polySurface1_polySurface547
+    3300022: Chip_baseMesh_clown_polySurface1_polySurface531_polySurface1_polySurface543
+    3300024: Chip_baseMesh_clown_polySurface1_polySurface532_polySurface1_polySurface544
+    3300026: Chip_baseMesh_clown_polySurface1_polySurface533_polySurface1_polySurface542
+    3300028: Chip_baseMesh_clown_polySurface1_polySurface534_polySurface1_polySurface541
+    3300030: Chip_baseMesh_clown_polySurface1_polySurface535_polySurface1_polySurface537
+    3300032: floor_polySurface536_polySurface1
+    3300034: pSphere3_polySurface1_polySurface554
+    3300036: pSphere4_polySurface1_polySurface538
+    4300000: Chip_baseMesh_clown_polySurface1_polySurface520_polySurface1_polySurface552
+    4300002: Chip_baseMesh_clown_polySurface1_polySurface521_polySurface1_polySurface553
+    4300004: Chip_baseMesh_clown_polySurface1_polySurface522_polySurface1_polySurface549
+    4300006: Chip_baseMesh_clown_polySurface1_polySurface523_polySurface1_polySurface551
+    4300008: Chip_baseMesh_clown_polySurface1_polySurface524_polySurface1_polySurface550
+    4300010: Chip_baseMesh_clown_polySurface1_polySurface525_polySurface1_polySurface548
+    4300012: Chip_baseMesh_clown_polySurface1_polySurface526_polySurface1_polySurface546
+    4300014: Chip_baseMesh_clown_polySurface1_polySurface527_polySurface1_polySurface545
+    4300016: Chip_baseMesh_clown_polySurface1_polySurface528_polySurface1_polySurface540
+    4300018: Chip_baseMesh_clown_polySurface1_polySurface529_polySurface1_polySurface539
+    4300020: Chip_baseMesh_clown_polySurface1_polySurface530_polySurface1_polySurface547
+    4300022: Chip_baseMesh_clown_polySurface1_polySurface531_polySurface1_polySurface543
+    4300024: Chip_baseMesh_clown_polySurface1_polySurface532_polySurface1_polySurface544
+    4300026: Chip_baseMesh_clown_polySurface1_polySurface533_polySurface1_polySurface542
+    4300028: Chip_baseMesh_clown_polySurface1_polySurface534_polySurface1_polySurface541
+    4300030: Chip_baseMesh_clown_polySurface1_polySurface535_polySurface1_polySurface537
+    4300032: floor_polySurface536_polySurface1
+    4300034: pSphere3_polySurface1_polySurface554
+    4300036: pSphere4_polySurface1_polySurface538
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

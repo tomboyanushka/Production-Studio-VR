@@ -22,7 +22,7 @@ public class LockController : MonoBehaviour
         if (CheckCombo())
         {
             drawer.isLockOpen = true;
-            drawer.Unlock();
+           // drawer.Unlock();
             gameObject.SetActive(false);
         }
 	}

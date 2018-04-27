@@ -16,6 +16,8 @@ TagManager:
   - Pillow
   - Clue
   - InviClue
+  - Tip
+  - FinalBox
   layers:
   - Default
   - TransparentFX
