@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1888,8 +1888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32459554324257a45847eb358b2849a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FloorQuad: {fileID: 0}
-  boundaryHeight: 0
+  FloorQuad: {fileID: 1832938532}
+  boundaryHeight: 5
   opaqueTrackingSpaceType: 1
   renderFloor: 1
   renderBoundary: 1
@@ -2572,8 +2572,6 @@ MonoBehaviour:
   isPiggyBankBroken: 0
   lightsOnceTurnedOff: 0
   isFireAlarm: 0
-  fireAlarmSound: {fileID: 0}
-  jugaad: 0
 --- !u!82 &1154120778
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3054,7 +3052,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4065341984131280, guid: b66421e32095fd54584c0b4589d02105, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.171
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4065341984131280, guid: b66421e32095fd54584c0b4589d02105, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3097,7 +3095,7 @@ Prefab:
     - target: {fileID: 114902634042150332, guid: b66421e32095fd54584c0b4589d02105,
         type: 2}
       propertyPath: boundaryHeight
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b66421e32095fd54584c0b4589d02105, type: 2}
@@ -3256,7 +3254,7 @@ Transform:
   m_PrefabInternal: {fileID: 1281188019}
   m_GameObject: {fileID: 1307108147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.999, y: 1.171, z: -6.202}
+  m_LocalPosition: {x: 2.999, y: 1.7, z: -6.202}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 466091589}
@@ -4740,6 +4738,14 @@ Prefab:
     - target: {fileID: 1139566263803088, guid: a76dee41d55dcd14bb0256914373317b, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449462669191140, guid: a76dee41d55dcd14bb0256914373317b, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4449462669191140, guid: a76dee41d55dcd14bb0256914373317b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a76dee41d55dcd14bb0256914373317b, type: 2}
