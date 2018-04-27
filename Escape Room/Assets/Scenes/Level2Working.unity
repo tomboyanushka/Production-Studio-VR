@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2274,6 +2274,8 @@ MonoBehaviour:
   areLightsOn: 0
   isPiggyBankBroken: 0
   lightsOnceTurnedOff: 0
+  isFireAlarm: 0
+  fireAlarmSound: {fileID: 0}
 --- !u!43 &1167062270
 Mesh:
   m_ObjectHideFlags: 0
@@ -2700,6 +2702,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1318335497278754, guid: b66421e32095fd54584c0b4589d02105, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b66421e32095fd54584c0b4589d02105, type: 2}
   m_IsPrefabParent: 0
@@ -2800,9 +2806,10 @@ GameObject:
   - component: {fileID: 1307108150}
   - component: {fileID: 1307108149}
   - component: {fileID: 1307108148}
+  - component: {fileID: 1307108151}
   m_Layer: 0
   m_Name: MixedRealityCameraParent
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2865,6 +2872,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307108151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1307108147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6cf5b487c203a499a80bfe2e4689eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallBreakSound: {fileID: 8300000, guid: ea98e829e7e7d134b9762b07456137db, type: 3}
 --- !u!1 &1384688465 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: b618a1053fbd4d9438af25caff37f533, type: 3}

@@ -8,13 +8,18 @@ public class Lights : MonoBehaviour
     public bool isPiggyBankBroken;
     public bool lightsOnceTurnedOff;
     public bool isFireAlarm;
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+
+    [SerializeField] private AudioClip fireAlarmSound;
+    private AudioSource source;
+
+    void Start ()
     {
         lightsOnceTurnedOff = false;
         areLightsOn = 0;
         isFireAlarm = false;
         isPiggyBankBroken = false;
+        source = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -73,5 +78,6 @@ public class Lights : MonoBehaviour
             clue.SetActive(false);
         }
         GameObject.FindGameObjectWithTag("InvisibleClue").SetActive(true);
+        //source.playOnAwake(fireAlarmSound, true);
     }
 }
