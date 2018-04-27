@@ -6,10 +6,15 @@ public class PiggyBank : MonoBehaviour {
     bool coinEntered;
     [SerializeField] private GameObject rock1;
     [SerializeField] private GameObject rock2;
+    [SerializeField] private AudioClip piggyBreak;
+    [SerializeField] private AudioClip coinAdd;
+    private GameObject clue2;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         coinEntered = false;
+        clue2 = GameObject.Find("Clue2");
+        clue2.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -24,6 +29,8 @@ public class PiggyBank : MonoBehaviour {
             Debug.Log("Coin Entered");
             Destroy(col.gameObject);
             coinEntered = true;
+            //Play sound
+            AudioSource.PlayClipAtPoint(coinAdd, transform.position);
         }
 
         if (col.CompareTag("Hammer") & coinEntered)
@@ -34,6 +41,8 @@ public class PiggyBank : MonoBehaviour {
             GameObject.Find("Lights").GetComponent<Lights>().isPiggyBankBroken = true;
 
             //Play sound
+            clue2.SetActive(true);
+            AudioSource.PlayClipAtPoint(piggyBreak, transform.position);
             Destroy(gameObject);
         }
     }
