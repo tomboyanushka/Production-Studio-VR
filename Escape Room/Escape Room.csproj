@@ -1005,6 +1005,7 @@
     <Compile Include="Assets\Scripts\LightSwitchGrab.cs" />
     <Compile Include="Assets\Scripts\LockController.cs" />
     <Compile Include="Assets\Scripts\LockScript.cs" />
+    <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\ObjectGrab.cs" />
     <Compile Include="Assets\Scripts\OpenBox.cs" />
     <Compile Include="Assets\Scripts\PiggyBank.cs" />

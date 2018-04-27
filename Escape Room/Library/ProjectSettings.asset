@@ -570,11 +570,12 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: EscapeRoom
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\Burhanuddin\OneDrive\Documents\UnityProjects\ProductionStudio\Production-Studio-VR\Escape
+    Room\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 007142f84dfdd401
   metroApplicationDescription: Escape Room
   wsaImages: {}
   metroTileShortName: 
