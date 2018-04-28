@@ -32,8 +32,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-Escape\ Room/Assets/Library/metadata/00/
-Escape\ Room/Assets/Library/metadata/10/
-Escape\ Room/Assets/Library/
-Escape\ Room/Assets/Temp/
-Escape\ Room/Library/
+Escape Room/Temp
+Escape Room/Assets/Library/metadata/00
+Escape Room/Assets/Library/metadata/10
+Escape Room/Assets/Library
+Escape Room/Assets/Temp
+Escape Room/Library
