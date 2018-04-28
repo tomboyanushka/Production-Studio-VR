@@ -58,9 +58,10 @@ public class Pillow : MonoBehaviour {
     void MyAnimation1()
     {
         Vector3 goal = new Vector3(9.509f, 0.859f, -11.30f);
-        if (Vector3.Distance(tooth.gameObject.transform.position, goal) > 0.1f)
+        float distance = Vector3.Distance(tooth.gameObject.transform.position, goal);
+        if (distance > 0.2f)
         {
-            tooth.gameObject.transform.position += Vector3.Normalize(goal - tooth.gameObject.transform.position) * Time.deltaTime;
+            tooth.gameObject.transform.position += Vector3.Normalize(goal - tooth.gameObject.transform.position) * Time.deltaTime * (distance/10);
         }
     }
 
