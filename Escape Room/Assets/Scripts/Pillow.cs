@@ -10,6 +10,7 @@ public class Pillow : MonoBehaviour {
     GameObject tooth;
     float startTime;
     public bool isWallBroken;
+    [SerializeField] AudioClip magicWhoosh;
 	// Use this for initialization
 	void Start () {
         interactingWithTooth = false;
@@ -52,6 +53,7 @@ public class Pillow : MonoBehaviour {
             Destroy(tooth);
             Instantiate(coin, new Vector3(9.509f, 0.859f, -11.30f), Quaternion.identity);
             interactingWithTooth = false;
+            AudioSource.PlayClipAtPoint(magicWhoosh, transform.position);
         }
     }
 

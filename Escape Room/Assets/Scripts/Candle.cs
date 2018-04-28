@@ -6,6 +6,7 @@ public class Candle : MonoBehaviour {
 
     public static int candlesLit = 0;
     public bool isCandleLit;
+    [SerializeField] AudioClip flame;
 	// Use this for initialization
 	void Start () {
         isCandleLit = false;
@@ -22,11 +23,12 @@ public class Candle : MonoBehaviour {
   
     void OnTriggerStay(Collider col)
     {
-        if (col.CompareTag("Rock") && !isCandleLit && FireRocks.rocksColliding && GameObject.Find("Lights").GetComponent<Lights>().lightsOnceTurnedOff)
+        if (col.CompareTag("Rock") && !isCandleLit && FireRocks.rocksColliding)
         {
             Debug.Log("CandleLit");
             isCandleLit = true;
             Candle.candlesLit += 1;
+            AudioSource.PlayClipAtPoint(flame, transform.position);
             if (Candle.candlesLit >= 4)
             {
                 GameObject.Find("Lights").GetComponent<Lights>().FireAlarm();

@@ -9,6 +9,7 @@ public class LockController : MonoBehaviour
     public LockScript c;
     public LockScript d;
     public DrawerScript drawer;
+    
 
     // Use this for initialization
     void Start ()

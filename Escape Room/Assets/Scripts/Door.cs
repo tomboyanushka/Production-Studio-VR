@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using HoloToolkit.Examples.Prototyping;
 
 public class Door : MonoBehaviour {
     public bool jugaad = true;
@@ -19,9 +20,9 @@ public class Door : MonoBehaviour {
         {
             Vector3 playerPosition = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
             Vector3 doorPosition = GameObject.Find("DoorLight").transform.position;
-            if (Vector3.Distance(playerPosition, doorPosition) <= 2f)
+            if (Vector3.Distance(playerPosition, doorPosition) <= 1.5f)
             {
-                SceneManager.LoadScene(3);
+                GameObject.Find("Switcher").GetComponent<SceneSwitcher>().NextScene();
             }
         }
         
@@ -30,7 +31,7 @@ public class Door : MonoBehaviour {
     public void OpenDoor()
     {
         AudioSource.PlayClipAtPoint(doorCreakOpen, transform.position);
-        GetComponent<Animator>().SetBool("OpenDoor", true);
+        GetComponent<Animator>().SetBool("OpenNow", true);
         doorOpen = true;
     }
 }

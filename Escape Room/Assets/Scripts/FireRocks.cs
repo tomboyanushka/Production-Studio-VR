@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireRocks : MonoBehaviour
 {
     static public bool rocksColliding = false;
-
+    [SerializeField] AudioClip rockGrind;
     private void Update()
     {
         if (rocksColliding)
@@ -19,15 +19,16 @@ public class FireRocks : MonoBehaviour
         FireRocks.rocksColliding = false;
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.transform.CompareTag("Rock"))
         {
+            AudioSource.PlayClipAtPoint(rockGrind, transform.position);
             FireRocks.rocksColliding = true;
         }
     }
 
-    void OnCollisionExit(Collision col)
+    void OnTriggerExit(Collider col)
     {
         if (col.transform.CompareTag("Rock"))
         {

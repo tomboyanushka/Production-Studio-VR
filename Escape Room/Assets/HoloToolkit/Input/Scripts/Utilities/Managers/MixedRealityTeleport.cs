@@ -98,8 +98,8 @@ namespace HoloToolkit.Unity.InputModule
                 Destroy(this);
                 return;
             }
-
-            if (teleportMarker != null)
+           
+                if (teleportMarker != null)
             {
                 teleportMarker = Instantiate(teleportMarker);
                 teleportMarker.SetActive(false);
@@ -120,7 +120,12 @@ namespace HoloToolkit.Unity.InputModule
                 HandleGamepad();
             }
 #endif
-
+           // GameObject.Find("TeleportMarker").SetActive(true);
+            if (teleportMarker == null)
+            {
+                teleportMarker = GameObject.Find("TeleportMarker");
+                //GameObject.Find("TeleportMarker").SetActive(false);
+            }
             if (currentPointingSource != null)
             {
                 PositionMarker();

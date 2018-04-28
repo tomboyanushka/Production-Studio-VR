@@ -44,6 +44,8 @@ public class MenuScript : MonoBehaviour, IInputClickHandler
             //Destroy(GameObject.Find("InputManager"));
             //Destroy(GameObject.Find("InteractiveMeshCursor"));
             switcher.NextScene();
+            GameObject.Find("MixedRealityCameraParent").transform.position = new Vector3(5,1,-1006);
+            GameObject.Find("InputManager").transform.position = new Vector3(5, 1, -1006);
             //SceneManager.LoadScene("MainLevel1.1");
         }
     }

@@ -9,7 +9,7 @@ public class LightSwitchGrab : MonoBehaviour, IInputClickHandler
 
     [Tooltip("Object color changes to this when selected.")]
     public Color SelectedColor = Color.red;
-
+    [SerializeField] AudioClip switchSound;
     private Color originalColor;
     private Material cachedMaterial;
     
@@ -35,6 +35,7 @@ public class LightSwitchGrab : MonoBehaviour, IInputClickHandler
     {
         if (GameObject.Find("Lights").GetComponent<Lights>().isPiggyBankBroken)
         {
+            AudioSource.PlayClipAtPoint(switchSound, transform.position);
             GameObject.Find("Lights").GetComponent<Lights>().SwitchLights();
         }
     }

@@ -15,7 +15,7 @@ public class LockScript : MonoBehaviour
         }
     }
     Dictionary<int, Orientation> orientationMap = new Dictionary<int, Orientation>();
-
+    [SerializeField] AudioClip lockCling;
     public int currentIndex = 1;
     // Use this for initialization
     void Start()
@@ -34,6 +34,7 @@ public class LockScript : MonoBehaviour
 
     public void IncrementIndex()
     {
+        AudioSource.PlayClipAtPoint(lockCling, transform.position);
         currentIndex = (currentIndex + 1) % 10;
     }
 

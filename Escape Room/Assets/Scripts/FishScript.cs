@@ -8,6 +8,7 @@ public class FishScript : MonoBehaviour
     bool isFishSelected = false;
     GameObject currentSelected = null;
     bool swap = false;
+    [SerializeField] AudioClip bubbles;
 
 
     public void OnSelect(GameObject fish)
@@ -28,13 +29,14 @@ public class FishScript : MonoBehaviour
                 currentTransform.position = fishTransform.position;
                 fishTransform.position = tempPos;
                 swap = true;
+               
             }
             else if (swap == true)
             {
                 currentSelected = null;
                 swap = false;
             }
-
+            AudioSource.PlayClipAtPoint(bubbles, transform.position);
            // currentSelected = null;
 
         }
