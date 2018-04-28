@@ -10,9 +10,13 @@ public class Candle : MonoBehaviour {
 	void Start () {
         isCandleLit = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Awake()
+    {
+        transform.GetChild(0).gameObject.SetActive(false);
+    }
+    // Update is called once per frame
+    void Update () {
      
 	}
   
@@ -29,6 +33,7 @@ public class Candle : MonoBehaviour {
                 GameObject.Find("Door").GetComponent<Door>().OpenDoor();
             }
             //Apply flames here
+            transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }
