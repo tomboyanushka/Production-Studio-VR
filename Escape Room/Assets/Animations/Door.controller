@@ -12,7 +12,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
@@ -34,7 +34,7 @@ AnimatorStateTransition:
   m_PrefabInternal: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
+  - m_ConditionMode: 3
     m_ConditionEvent: OpenDoor
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -115,7 +115,7 @@ AnimatorStateMachine:
     m_Position: {x: 528, y: 84, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102680208282175418}
-    m_Position: {x: 379.82346, y: 371.3105, z: 0}
+    m_Position: {x: 480, y: 288, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:

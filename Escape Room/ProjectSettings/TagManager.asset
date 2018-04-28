@@ -18,6 +18,7 @@ TagManager:
   - InviClue
   - Tip
   - FinalBox
+  - DoorKey
   layers:
   - Default
   - TransparentFX

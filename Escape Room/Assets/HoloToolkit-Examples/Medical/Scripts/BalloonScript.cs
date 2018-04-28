@@ -35,6 +35,7 @@ public class BalloonScript : MonoBehaviour
     {
         if (other.gameObject.name == "BalloonKey" && isInstantiated == false)
         {
+            Destroy(other.gameObject);
             balloonInstance = Instantiate(balloons, startPos, transform.rotation);
             //transform.position = Vector3.Lerp(startPos, endPos, 0.2f);
             isInstantiated = true;

@@ -23,7 +23,7 @@ public class DoorScript : MonoBehaviour
             openDoor = true;
             if (openDoor == true)
             {
-                //GetComponent<Animator>().SetBool("DoorOpen", true);
+                GetComponent<Animator>().SetBool("OpenDoor2", true);
                 //openDoor = false;
                 SceneManager.LoadScene("Level2Working", LoadSceneMode.Single);
             }
