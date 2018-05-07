@@ -187,10 +187,14 @@ TextMesh:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 599869371}
-  m_Text: 'Special Thanks
+  m_Text: 'Special Thanks (Not in alphabetic order)
 
 
     Steve Maier
+
+    Nitish Victor
+
+    Jishnu Girish
 
     and the Internet'
   m_OffsetZ: 0
